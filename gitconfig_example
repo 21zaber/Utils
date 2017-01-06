@@ -1,0 +1,8 @@
+[user]
+	email = e-mail
+	name = Name
+	password = YourPassword
+[core]
+	editor = vim
+[merge]
+	tool = vimdiff
