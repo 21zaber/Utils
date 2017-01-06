@@ -1,8 +1,9 @@
 [user]
-	email = e-mail
-	name = Name
-	password = YourPassword
+	email = zaber.eng@gmail.com
+	name = 21zaber
 [core]
 	editor = vim
 [merge]
 	tool = vimdiff
+[credential]
+	helper = store
