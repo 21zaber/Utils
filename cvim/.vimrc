@@ -6,12 +6,12 @@ autocmd!
 " dirty cheat to force systemwide filetype settings
 " it's neccesary to switch off filetype before calling pathogen
 filetype off
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+"call pathogen#runtime_append_all_bundles()
+"call pathogen#helptags()
 filetype plugin indent on
 syntax on
 " enable all plugins
-call pathogen#runtime_append_all_bundles() 
+"call pathogen#runtime_append_all_bundles() 
 "}}}
 "{{{  General options 
 set backup                          " keep a backup file
@@ -345,7 +345,7 @@ imap <C--> <ESC>:SwitchSpelling<CR><CR>a
 " my settings
 set background=dark
 set t_Co=256
-colorscheme neon
+"colorscheme neon
 "colorscheme 256-grayvim
 hi Normal ctermbg=NONE
 set number
