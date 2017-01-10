@@ -4,18 +4,22 @@
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-Plugin 'gmarik/Vundle.vim'		" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'		        " let Vundle manage Vundle, required
 Plugin 'scrooloose/nerdtree' 	    	" Project and file navigation
 Plugin 'majutsushi/tagbar'          	" Class/module browser
 Plugin 'fisadev/FixedTaskList.vim'  	" Pending tasks list
-Plugin 'garbas/vim-snipmate'		" Snippets manager
+"Plugin 'garbas/vim-snipmate'		    " Snippets manager
 Plugin 'MarcWeber/vim-addon-mw-utils'	" dependencies #1
-Plugin 'tomtom/tlib_vim'		" dependencies #2
-Plugin 'honza/vim-snippets'		" snippets repo
-Plugin 'davidhalter/jedi-vim' 		" Jedi-vim autocomplete plugin
+Plugin 'tomtom/tlib_vim'		        " dependencies #2
+Plugin 'jiangmiao/auto-pairs'           " auto pair brackets and etc
+"Plugin 'honza/vim-snippets'		        " snippets repo
+Plugin 'Valloric/YouCompleteMe'         " Jedi-vim autocomplete plugin
+"Plugin 'davidhalter/jedi-vim' 		    " Jedi-vim autocomplete plugin
 Plugin 'mitsuhiko/vim-python-combined'  " Combined Python 2/3 for Vim
-call vundle#end()            		" required
-filetype on
+Plugin 'vim-scripts/SessionMgr.git'     " Combined Python 2/3 for Vim
+call vundle#end()            		    " required
+filetype on                                      
+
 filetype plugin on
 filetype plugin indent on
 set nobackup                          " keep a backup file
