@@ -25,6 +25,7 @@ filetype plugin indent on
 set nobackup                          " keep a backup file
 set showcmd                         " display incomplete commands
 set incsearch                       " do incremental searching
+set noswapfile                      " do not use swap files"
 set smartcase
 set hidden
 set lazyredraw
