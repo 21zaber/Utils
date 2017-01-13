@@ -22,7 +22,8 @@ filetype on
 
 filetype plugin on
 filetype plugin indent on
-set nobackup                          " keep a backup file
+set nobackup                         
+set noswapfile                       
 set showcmd                         " display incomplete commands
 set incsearch                       " do incremental searching
 set smartcase
@@ -311,8 +312,7 @@ imap <C--> <ESC>:SwitchSpelling<CR><CR>a
 " my settings
 set background=dark
 set t_Co=256
-"colorscheme ir_black
-"colorscheme 256-grayvim
+colorscheme ron
 hi Normal ctermbg=NONE
 set number
 set mousehide "Спрятать курсор мыши когда набираем текст
