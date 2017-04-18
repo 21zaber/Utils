@@ -2,7 +2,7 @@
 
 python-vim:
 	(                                                                                           \
-	apt install vim cmake python-dev python3-dev  libclang-3.8-dev                           && \
+	sudo apt install vim cmake python-dev python3-dev  libclang-3.8-dev                           && \
 	(                                                                                           \
 		mkdir ~/.vim-backup                                                              && \
 		mv ~/.vimrc ~/.vim-backup/                                                       && \
@@ -16,10 +16,13 @@ python-vim:
 
 
 install:                                
-	(                                                             \
-	apt install mercurial vim wireshark                        && \
-	apt install python3 python3-pip ipython3 ipython3-notebook && \
-	apt install python python-pip ipython ipython-notebook        \
+	(                                                                  \
+	sudo apt install mercurial vim wireshark                        && \
+	sudo apt install python3 python3-pip ipython3                   && \
+	sudo apt install python python-pip ipython                      && \
+	sudo pip install notebook                                       && \
+	sudo pip3 install notebook                                      && \
+	echo '  '                                                          \
 	)
 
 
