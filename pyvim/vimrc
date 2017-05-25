@@ -26,6 +26,7 @@ set nobackup
 set noswapfile                       
 set showcmd                         " display incomplete commands
 set incsearch                       " do incremental searching
+set noswapfile                      " do not use swap files"
 set smartcase
 set hidden
 set lazyredraw
