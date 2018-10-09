@@ -1,0 +1,76 @@
+
+
+filetype on                                      
+filetype plugin on
+filetype plugin indent on
+
+colorscheme koehler
+
+set nobackup                         
+set noswapfile                       
+set showcmd                                 " display incomplete commands
+set incsearch                               " do incremental searching
+set smartcase
+set hidden
+set lazyredraw
+set langmap=йцукенгшщзхъфывапролджэячсмитьбюЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ\;qwertyuiop[]asdfghjkl\\;'zxcvbnm\\,.QWERTYUIOP{}ASDFGHJKL:\"ZXCVBNM<>
+set nocompatible  
+set backspace=indent,eol,start              " more powerful backspacing
+set history=10                              " keep 10 lines of command line history
+set ruler                                   " show the cursor position all the time
+set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.ilg,.inx,.out,.toc
+set expandtab                               " replace tab with spaces
+set shiftwidth=4                            " define shift value in spaces
+set softtabstop=4                           " define display value \t in spaces
+set tabstop=4                               " define real value \t in spaces
+set foldmethod=syntax                       " how to make folds
+set virtualedit=all                         " feel free to navigate anywhere
+set formatoptions=tcqrn                     " define text format options
+set wildmenu                                " show pretty line on completion
+set shm=aoOAI
+set hlsearch                                " Also switch on highlighting the last used search pattern.   
+set number
+set mousehide                               " Спрятать курсор мыши когда набираем текст
+set mouse=a                                 " Включить поддержку мыши
+set termencoding=utf-8                      " Кодировка терминала
+set novisualbell                            " Не мигать 
+set encoding=utf-8                          " Кодировка файлов по умолчанию
+set fileencodings=utf8,cp1251               " Возможные кодировки файлов, если файл не в unicode кодировке, то будет использоваться cp1251
+
+command W w
+command Q q
+command Wq wq
+command WQ wq
+command Wa wa
+command WA wa
+command Wqa wqa
+command WQa wqa
+command WQA wqa
+
+" Mappings 
+map Q gq
+map Y y$
+" Save all files 
+map <F2> <Esc>:wa<CR>                           
+" Save all files and exit
+map <F3> <Esc>:wqa<CR>
+" Replace template of current word 
+map <F4> :%s/\<<C-r>=expand("<cword>")<cr>\>/
+
+nmap ,h :tabprev<CR>
+nmap ,l :tabnext<CR>
+nmap ,j :bnext<CR>
+nmap ,k :bprevious<CR> 
+nmap ,p :set paste!<CR>
+nmap ,t :tabnew<CR>
+nmap <S-Tab> <<
+nmap <Tab> <C-W>w
+nmap <Backspace> <Esc>hx<Ins>
+nmap <CR> i<CR><Esc>l
+
+imap <S-Tab> <Esc><<i
+imap <Ins> <Esc>a
+imap <Backspace> <Esc>x<Ins>
+
+vmap <Tab> >gv
+vmap <S-Tab> <gv
