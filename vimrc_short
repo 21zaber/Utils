@@ -1,18 +1,38 @@
 
-
 filetype on                                      
 filetype plugin on
 filetype plugin indent on
 
-colorscheme koehler
+"   " Autoinstalling vim plugin manager
+"   if empty(glob('~/.vim/autoload/plug.vim'))
+"     silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+"       \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+"     autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+"   endif
+"
+"   call plug#begin('~/.vim/plugged')
+"   Plug 'Valloric/YouCompleteMe'         " Autocomplete plugin
+"   Plug 'scrooloose/nerdtree' 	    	  " Project and file navigation
+"   Plug 'pseewald/vim-anyfold'           " Folding
+"   call plug#end()
+"
+"   " NERD Tree settings
+"   nmap ,n :NERDTreeToggle<CR>
+"   let NERDTreeWinPos="right"
+"
+"   " Vim-AnyFold settings
+"   let anyfold_activate=1
+"   set foldlevel=0
 
-set nobackup                         
-set noswapfile                       
+colorscheme ron
+
+set nobackup                                " disable file backuping
+set noswapfile                              " disable swapfile
 set showcmd                                 " display incomplete commands
 set incsearch                               " do incremental searching
-set smartcase
-set hidden
-set lazyredraw
+set smartcase                               " override 'ignorecase' when pattern has upper case characters 
+set hidden                                  " don't unload a buffer when no longer shown in a window 
+set lazyredraw                              " don't redraw while executing macros 
 set langmap=йцукенгшщзхъфывапролджэячсмитьбюЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ\;qwertyuiop[]asdfghjkl\\;'zxcvbnm\\,.QWERTYUIOP{}ASDFGHJKL:\"ZXCVBNM<>
 set nocompatible  
 set backspace=indent,eol,start              " more powerful backspacing
@@ -27,15 +47,15 @@ set foldmethod=syntax                       " how to make folds
 set virtualedit=all                         " feel free to navigate anywhere
 set formatoptions=tcqrn                     " define text format options
 set wildmenu                                " show pretty line on completion
-set shm=aoOAI
+set shm=aoOAI                               " list of flags to make messages shorter
 set hlsearch                                " Also switch on highlighting the last used search pattern.   
-set number
-set mousehide                               " Спрятать курсор мыши когда набираем текст
-set mouse=a                                 " Включить поддержку мыши
-set termencoding=utf-8                      " Кодировка терминала
-set novisualbell                            " Не мигать 
-set encoding=utf-8                          " Кодировка файлов по умолчанию
-set fileencodings=utf8,cp1251               " Возможные кодировки файлов, если файл не в unicode кодировке, то будет использоваться cp1251
+set number                                  " show line's numbers
+set mousehide                               " hide mouse while typing
+set mouse=a                                 " enable nouse
+set termencoding=utf-8                      " terminal encoding
+set novisualbell                            " 
+set encoding=utf-8                          " default file encoding
+set fileencodings=utf8,cp1251               " possible file encodings
 
 command W w
 command Q q
