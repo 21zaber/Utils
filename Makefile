@@ -14,6 +14,8 @@ python-vim:
 	~/.vim/bundle/YouCompleteMe/install.sh --clang-completer                                    \
 	)
 
+vim-short:
+	cp vimrc_short ~/.vimrc
 
 install:                                
 	(                                                                  \
